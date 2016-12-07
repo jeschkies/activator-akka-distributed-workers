@@ -16,3 +16,5 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-testkit" % akkaVersion % "test",
   "org.scalatest" %% "scalatest" % "2.2.4" % "test",
   "commons-io" % "commons-io" % "2.4" % "test")
+
+assemblyOutputPath in assembly := baseDirectory.value / "release" / "akka-cluster.jar"
